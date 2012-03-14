@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>SimpleGo</title>
+		<meta name="Description" content="" />
+		<meta name="keywords" content="" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-iphone4.png" />
+		<link rel="stylesheet" type="text/css" href="css/ui-lightness/jquery-ui-1.8.custom.css">
+		<link rel="stylesheet" href="css/styles_iphone.css" type="text/css" />
+		<script type="text/javascript" src="js/add2home.js"></script>
+		<link rel="stylesheet" href="css/add2home.css" type="text/css" />
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.3/jquery.min.js"></script>
+		<script src="http://www.google.com/jsapi?key=ABQIAAAAkaY0F_nstMQMOmknRlnghxQo_cBRDFm4OBlVSNBz3Qt7iZU0BRSBWKOCjSwKeW3qE43djL0jYO-LGg" type="text/javascript">
+		</script>
+		<script type="text/javascript" src="js/scripts.js"></script>
+		<script type="text/javascript" src="js/jquery-ui-1.8.custom.min.js"></script>
+		<script type="application/x-javascript"> 
+		   addEventListener("load", function() 
+		   { 
+		   setTimeout(updateLayout, 0); 
+		   }, false); 
+		   
+		   var currentWidth = 0; 
+		   
+		   function updateLayout() 
+		   { 
+		   if (window.innerWidth != currentWidth) 
+		   { 
+		   currentWidth = window.innerWidth; 
+		   
+		   var orient = currentWidth == 320 ? "profile" : "landscape"; 
+		   document.body.setAttribute("orient", orient); 
+		   setTimeout(function() 
+		   { 
+		   window.scrollTo(0, 1); 
+		   }, 100); 
+		   } 
+		   } 
+		   
+		   setInterval(updateLayout, 100); 
+		   </script>
+		   
+	</head>
+	<body>
+		<div class="page_content">
+			<input id="tags" class="box" type="text" onfocus="updateLayout()" name="" value="" placeholder="ex. Amazon"/>
+			<div class="logo">
+				<div class="drawnArrow"></div>
+			</div>
+			<p>no domain names,<br /> just type where you want to go</p>
+			<p id="tip">Tip: Tap <strong>Return</strong> to <span id="go"><strong>Go</strong><span></p>
+			<footer></footer>
+		</div>
+	</body>
+</html>

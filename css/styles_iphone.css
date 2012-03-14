@@ -1,0 +1,159 @@
+@charset "UTF-8";
+
+
+/* Text formatting ***************************************************************/
+
+body {
+	
+	background-image: url(../images/bg_texture.png), -webkit-radial-gradient(center top, ellipse cover, rgba(255,255,255,1) 0%,rgba(28,100,70,1) 150%); /* Chrome10+,Safari5.1+ */
+	font-family: "helvetica", sans-serif;
+	color: #555555;
+	text-shadow: 0px 1px 0px #fff;
+	font-size: 14px;
+	margin: 0px 10px 0px 10px;
+	padding: 10px;
+	letter-spacing: 1px;
+}
+
+#go {
+	color: #359262;
+}
+
+
+/* Layout ******************************************************/
+
+body {position: relative; margin: 0px auto; text-align: ;
+}
+
+input[type=text] {
+	width:95%;
+	-webkit-border-radius: 5px;
+	height: 25px;
+	border: solid 5px rgba(3, 91, 65, .7);
+	-webkit-box-shadow: inset 0px 2px 2px rgba(0, 0, 0, 0.3);
+	font-family: "helvetica", sans-serif;
+	color: #555555;
+	text-shadow: 1px 1px 1px #fff;
+	font-size: 12px;
+	font-weight: 600;
+	margin: 0px auto 20px -2px;
+}
+
+.logo {
+	width: 169px;
+	height: 50px;
+	background: url(../images/logo.png);
+	margin: 0px auto 10px auto;
+	position: relative;
+}
+
+.drawnArrow {
+	position: absolute;
+	left: -72px;
+	top: -10px;
+	height: 103px;
+	width: 45px;
+	background: url(../images/arrow.png);
+}
+
+p {
+	width: 300px;
+	margin: 0px auto 100px auto;
+	text-align: center;
+}
+
+footer {
+	height: 90px;
+}
+
+#tip {
+	margin-bottom: 35px;
+}
+
+/* Dropdown
+----------------------------------*/
+.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus { 
+	border: none; 
+	background-color:#99dfbc; 
+ 	color: #363636; 
+	overflow:hidden; 
+}
+
+
+
+
+.ui-menu {
+	list-style:none;
+	display:block;
+	overflow: hidden;
+	width: 95%;
+	padding:0px;
+	background-color: #fff;
+	-webkit-box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.3);
+	font-family: helvetica, sans-serif;
+	color: #555555;
+	text-shadow: 0px 1px 0px #fff;
+	font-size: 14px;
+}
+
+.ui-menu .ui-menu-item {
+
+	
+}
+
+.ui-menu .ui-menu-item a {
+	text-decoration:none;
+	display:block;
+	height: 20px;
+	margin: 0px;
+/*	padding:10px 5px 7px 5px;*/
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	vertical-align: middle;	
+	font-weight: 600;
+	font-size: 14px;
+		
+}
+
+.ui-menu a img {
+	border: 1px solid #b9b5b5;
+	background-color: #fff;
+	width: 16px;
+	height: auto;
+	padding: 2px;
+	margin-top: -5px;
+}
+
+ul li:nth-child(odd) {
+	background-color: #ebeaea;
+}
+
+ul li:nth-child(even) {
+	background-color: #fff;
+}
+
+a.ui-state-hover img{
+	border-color: #00a651;
+}
+
+
+/* Media Quaries ******************************************/
+
+@media screen and (-webkit-device-pixel-ratio: 2) {
+
+    .logo {
+        background: url("../images/logo@2x.png");
+        background-size: 170px;
+        background-repeat: no-repeat;
+    }
+    
+    .drawnArrow {
+        background: url("../images/arrow@2x.png");
+        background-size: 45px;
+        background-repeat: no-repeat;
+    }
+
+}
+
+
+

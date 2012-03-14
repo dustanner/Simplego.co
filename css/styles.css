@@ -1,0 +1,199 @@
+@charset "UTF-8";
+
+/* Text formatting ***************************************************************/
+
+body {
+	
+	background-image: url(../images/bg_texture.png), -webkit-gradient(radial, center center, 0px, center center, 200%, color-stop(0%,rgba(255,255,255,1)), color-stop(200%,rgba(28,100,70,1))); /* Chrome,Safari4+ */
+	
+	background-image: url(../images/bg_texture.png), -webkit-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%,rgba(28,100,70,1) 200%); /* Chrome10+,Safari5.1+ */
+	
+	background-image: url(../images/bg_texture.png), -moz-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(28,100,70,1) 200%); /* FF3.6+ */
+	
+	background-image: url(../images/bg_texture.png), -o-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%,rgba(28,100,70,1) 200%); /* Opera 12+ */
+	background-image: url(../images/bg_texture.png), -ms-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%,rgba(28,100,70,1) 200%); /* IE10+ */
+	background-image: url(../images/bg_texture.png), radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%,rgba(28,100,70,1) 200%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#1c6446',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	
+	
+	font-family: "Helvetica", sans-serif;
+	color: #555555;
+	text-shadow: 0px 1px 1px #fff;
+	font-size: 14px;
+	margin: 150px 10px 0px 10px;
+	padding: 0px;
+	letter-spacing: 1px;
+}
+
+#go {
+	color: #359262;
+}
+
+
+
+/* Layout ******************************************************/
+
+.page {position: relative; margin: 0px auto;
+	max-width: 980px;}
+
+.page_content {
+	text-align: center;
+	letter-spacing: 0px;
+}
+
+#dropdown {
+	width:580px;
+	margin: 0 auto 50px auto;
+	position: relative;
+	top: -22px;
+	-webkit-box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+.page_content ul {
+	list-style: none;
+	margin-bottom: 0 auto;
+	padding: 0px;
+}
+
+.page_content li {
+	width: 578px;
+	height: 40px;
+	margin: 0px auto;
+	background-color: white;
+	padding: 0px;
+	text-align: left;
+	letter-spacing: 0px;
+	position: relative;
+
+}
+
+.page_content ul .selected {
+	background-color: #99dfbc;
+	border: 1px solid #00a651;
+	color: #363636;
+}
+
+.page_content ul li:hover {
+	background-color: #99dfbc;
+	border: 1px solid #00a651;
+	color: #363636;
+	cursor: pointer;
+}
+
+.page_content ul .selected img {
+	border: 1px solid #00a651;
+}
+
+.page_content ul li img {
+	display: inline-block;
+	border: 1px solid #b9b5b5;
+	vertical-align: middle;
+	padding: 5px;
+	margin-left: 5px;
+	background-color: #ffffff;
+}
+
+.page_content ul li p {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+
+.page_content ul .gray {
+	background-color: #ecebeb;
+}
+
+/*.arrow {
+	color:#00a651 ;
+	font-size: 2.2em;
+	float: right;
+	margin: 3px 5px 0px 0px;
+}*/
+
+
+
+
+header {
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.logo {
+	display: inline-block;
+	width: 169px;
+	height: 50px;
+	background: url(../images/logo.png);
+	margin: 0px 3px 0px 0px;
+	vertical-align: bottom;
+}
+
+header p {
+	display: inline-block;
+	font-size: 14px;
+	vertical-align: bottom;
+}
+
+.ui-autocomplete-input { /* Main input field */
+	width:578px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	height: 33px;
+	border: solid 1px #fff;
+	-webkit-box-shadow: inset 0px 2px 2px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow: inset 0px 2px 3px rgba(0, 0, 0, 0.5);
+	font-family: "helvetica", sans-serif;
+	color: #555555;
+	text-shadow: 1px 1px 1px #fff;
+	font-size: 16px;
+	font-weight: 500;
+	padding-left:5px;
+	position: absolute;
+	left: 7px;
+	top: 9px;
+}
+
+
+input:focus {
+	outline:none;
+}
+
+.box_outside { /* Outer Search Box */
+	position: relative;
+	background: #ffffff;
+	background: -moz-linear-gradient(top, #ffffff 0%, #e5e5e5 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#e5e5e5));
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 );
+	-webkit-box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.3);
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	width: 600px;
+	height: 55px;
+	margin: 0 auto;
+}
+
+#instructions {
+	margin: 350px auto 30px auto;
+}
+
+footer {
+	text-align: center;
+	margin: 80px auto 0px auto;
+	height: 80px;
+}
+
+footer .items {
+	display: inline-block;
+	vertical-align: middle;
+	padding: 0px;
+}
+
+footer p {
+	display: inline;
+	margin-left: 50px;
+}
+
+
+
+
